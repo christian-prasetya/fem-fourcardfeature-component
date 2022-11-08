@@ -1,0 +1,35 @@
+@use '../utils' as u;
+
+:root {
+  // Color Primary
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  // Color Neutral
+  --clr-veryDarkBlue: hsl(234, 12%, 34%);
+  --clr-grayishBlue: hsl(229, 6%, 66%);
+  --clr-veryLightGray: hsl(0, 0%, 98%);
+}
+
+// Color Variables
+$bg-main: var(--clr-veryLightGray);
+
+$bg-red: var(--clr-red);
+$bg-cyan: var(--clr-cyan);
+$bg-orange: var(--clr-orange);
+$bg-blue: var(--clr-blue);
+
+$color-primary: var(--clr-grayishBlue);
+$color-heading: var(--clr-veryDarkBlue);
+
+// Fonts Variable
+$font-stack: 'Poppins', sans-serif;
+
+$font-extralight: 200;
+$font-regular: 400;
+$font-semibold: 600;
+
+// utilities
+$border-radius: u.rem(8);
