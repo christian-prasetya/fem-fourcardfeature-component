@@ -181,7 +181,7 @@ main .card-container .card {
 main .card-container .card__body-title {
   height: 50%;
 }
-main .card-container .card__body-title h3 {
+main .card-container .card__body-title h2 {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--clr-veryDarkBlue);
