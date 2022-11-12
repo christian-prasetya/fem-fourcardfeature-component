@@ -1,0 +1,126 @@
+@use '../base' as b;
+@use '../utils' as u;
+
+main {
+  margin: u.rem(32);
+
+  @include u.breakpoint(large) {
+    margin: u.rem(64);
+  }
+
+  .title {
+    text-align: center;
+    padding-top: u.rem(60);
+    padding-bottom: u.rem(60);
+
+    h3 {
+      font-weight: b.$font-extralight;
+      color: b.$color-heading;
+      font-size: u.rem(24);
+      margin-bottom: u.rem(19);
+    }
+
+    h1 {
+      font-weight: b.$font-semibold;
+      font-size: u.rem(24);
+      color: b.$color-heading;
+      margin-bottom: u.rem(32);
+    }
+
+    p {
+      font-size: u.rem(15);
+      line-height: 165%;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(25);
+    padding-top: u.rem(17);
+    padding-bottom: u.rem(17);
+    width: u.rem(311);
+    margin-inline: auto;
+
+    @include u.breakpoint(large) {
+      width: u.rem(1110);
+      height: u.rem(585);
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .card-vertical {
+      display: flex;
+      flex-direction: column;
+      gap: u.rem(25);
+    }
+
+    .card {
+      width: 100%;
+      height: u.rem(222);
+      border-radius: b.$border-radius;
+      padding: u.rem(28);
+      box-shadow: 0 u.rem(4) u.rem(8) u.rem(4) hsla(229, 6%, 66%, 0.5);
+
+      @include u.breakpoint(large) {
+        width: u.rem(350);
+        height: u.rem(250);
+        padding: u.rem(33);
+      }
+
+      &__body {
+
+        &-title {
+          height: 50%;
+
+          h3 {
+            font-size: u.rem(20);
+            font-weight: b.$font-semibold;
+            color: b.$color-heading;
+          }
+
+          p {
+            font-size: u.rem(13);
+            line-height: 170%;
+          }
+        }
+
+        &-image {
+          height: 50%;
+          float: right;
+          padding-top: u.rem(25);
+
+          @include u.breakpoint(large) {
+            padding-top: u.rem(28);
+          }
+
+          img {
+            width: u.rem(58);
+            height: u.rem(58);
+
+            @include u.breakpoint(large) {
+              width: u.rem(64);
+              height: u.rem(64);
+            }
+          }
+        }
+      }
+    }
+
+    .border-red {
+      border-top: u.rem(6) inset b.$bg-red;
+    }
+
+    .border-cyan {
+      border-top: u.rem(6) inset b.$bg-cyan;
+    }
+
+    .border-orange {
+      border-top: u.rem(6) inset b.$bg-orange;
+    }
+
+    .border-blue {
+      border-top: u.rem(6) inset b.$bg-blue;
+    }
+  }
+}

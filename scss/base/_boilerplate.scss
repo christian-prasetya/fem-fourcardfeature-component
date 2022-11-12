@@ -1,4 +1,5 @@
 @use '../utils' as u;
+@use 'variables' as v;
 
 /* Box sizing rules */
 *,
@@ -33,6 +34,11 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
+  background-color: v.$bg-main;
+  font-family: v.$font-stack;
+  font-size: u.rem(15);
+  color: v.$color-primary;
+  font-weight: v.$font-regular;
 }
 
 /* A elements that don't have a class get default styles */

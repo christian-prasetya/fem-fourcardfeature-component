@@ -33,3 +33,20 @@ $font-semibold: 600;
 
 // utilities
 $border-radius: u.rem(8);
+
+// Custom Class
+.bg-cyan {
+  border-color: $bg-cyan;
+}
+
+.bg-red {
+  border-color: $bg-red;
+}
+
+.bg-orange {
+  border-color: $bg-orange;
+}
+
+.bg-blue {
+  border-color: $bg-blue;
+}
