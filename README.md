@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/mobile-first-responsive-four-card-component-gIxJx0y64B)
 - Live Site URL: [live site URL](https://christian-prasetya.github.io/fem-fourcardfeature-component/)
 
 ## My process
